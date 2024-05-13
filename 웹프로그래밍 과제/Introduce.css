@@ -1,0 +1,32 @@
+.img{
+    margin-top: -5px;
+    margin-left: 15px;
+}
+
+.header{
+    width: 80%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: 4px groove rgb(182, 182, 182);
+    margin-top: 50px;
+    margin-left: 225px;
+}
+.nav{
+    display: flex;
+    
+}
+.nav >li{
+    margin: auto;
+    padding: auto;
+    text-align: right;
+    list-style: none;
+}
+.nav >li>a{
+    color: rgb(70, 70, 70);
+    text-decoration-line: none;
+}
+.nav >li>a:hover{
+    color:rgb(245, 245, 0);
+}
+
