@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="wrap">
+        <div class="intro_bg">
+            <div class="header">
+                <ul class="nav">
+                    <li><a href="#" onclick="location.href='main.html'">Main</a></li>
+                    <li><a href="#" onclick="location.href='Introduce.html'">Introduce</a></li>
+                    <li><a href="#" onclick="location.href='Plan.html'">Plan</a></li>
+                    <li><a href="#" onclick="location.href='Purpose.html'">Purpose</a></li>
+                </ul>
+                <div class="search">
+                    <form action="https://www.google.com/search" method="GET" target="_blank">
+                    <input id="search" name="q" type="text" placeholder="Google Search">
+                    <butotn class="search-btn" type="submit"></butotn>
+                <button class="button" type="submit">검색</button>
+                </form>    
+                </div>
+            </div>
+
+            <div class="intro_Clock">
+                <h3><div id="clock">00:00:00</div></h3>
+            </div>
+            
+            <div class="intro">
+                <h3 class="title content">
+                    <span class="letter">어서오세요 <span style="color: rgb(176, 47, 202);">김진희</span>의 웹입니다!</span></h3>
+            </div>
+
+        <ul class="A">
+            <li>
+                <div>
+                    <div class="contents1">국립공주대학교</div>
+                    <div class="contents2">컴퓨터 공학부 소프트웨어전공</div>
+                </div>
+            </li>
+
+            <li>
+                <div>
+                    <div class="contents1">202101751</div>
+                    <div class="contents2">김진희</div>
+                </div>
+            </li>
+
+        </ul>
+        
+        <br><br><br><br><br><br>
+           
+            <ul class="icons">
+                <li>
+                    <div class="contents1_bold"><i>&#9827개요&#9827</i></div>
+                    <div class="contents3_bold"><i>&#9830주제선정이유</i></div>
+                    <div class="contents3">이 웹페이지는 김진희의 웹 제작으로, 전체적인 주제는
+                        성장과정과, 그 성장과정에 따른 목표에 대하여 작성한 페이지입니다. 또한
+                        전공을 살리지 않고 다른 방향으로 나아간다는 것에 대한 두려움으로 진로를 확실히 결정하지 못하였으나, 
+                        이번 프로젝트를 통하여 새롭게 생각해볼 수 있었고, 확실하게 결정할 수 있었습니다.
+                        조금 더 원하는 목표에 대하여 알아보고, 새로운 분야에 대한 관심이 생기게 되었습니다. 
+                        
+                    </div><br>
+
+                        <div class="contents3_bold">&#9830 웹페이지 컨셉 선정이유</i></div>
+                        <div class="contents3">올해 2024년 새해와 함께 찍은 사진을 배경으로 하였습니다. 새로운 방향으로 나아가는 것에 대한
+                            두려움을 떨쳐내고 다시 시작해보자는 의미로 배경을 지정하였습니다. 원래 정사각형의 모양으로 크기를 조절하여
+                            사진이 나오게끔 하고자 하였으나 사진의 하늘 색과 태양빛의 그라데이션이 앞으로의 밝은 미래를 
+                            꿈꿀 수 있는 색이라고 생각하여 크기 조절을 하지 않고, 새해 하늘 배경으로만 지정하게 되었습니다. 부정적인 생각을 버리고 
+                            새로운, 밝은 미래를 위해 살아가자는 의미로 전체적으로 밝은 분위기의 컨셉으로 웹페이지를 만들게 되었습니다</div><br>
+                </li>
+
+                <li>
+                    <div class="contents1_bold"><i>&#9827프로젝트 진행 중 어려웠던 부분&#9827</i></div>
+                    <div class="contents3_bold">  &#9830 디자인 요소</div>
+                    <div class="contents3">디자인을 하는 것에 있어 어려움을 겪었습니다. 웹 제작을 처음 경험해보다보니
+                        배경, 버튼, 위젯 등을 어떻게 하면 더 편리하게 사용할 수 있는지 그리고 위젯마다의 위치를 지정하는 
+                        것에 많이 헤메었습니다. 특히 가장 어려웠던 부분은 스크롤 부분이었는데 원하지 않게 계속 스크롤이 생겼고, 
+                        이를 해결하기 위하여 스크롤 아래부분까지 공간을 사용하려고 하였으나 공간의 맨 마지막 부분이 나오지 않았습니다  <span style="color: rgb(124, 98, 32);">공간까지 보이게 할 수 없어
+                        차라리 스크롤를 늘리자 하여 overflow-y의 height로 조절하여 스크롤의 분량을 늘렸고, 
+                        맨아래 부분의 공간과 더 많은 공간도 사용할 수 있게 되었다.</span> 이를 해결하는데에 있어 
+                        디자인요소에서 시간이 많이 소요되었습니다.
+                    </div>
+                    <br>
+                    <div class="contents3_bold">&#9830 창의적 요소</div>
+                    <div class="contents3">학업에서 배운 기술만으로 페이지를 제작하는 것에 있어서 쉽지는 않았습니다. 비슷하게 따라해보았을 때에도
+                        명확하게 잘 나오지 않은 경우가 많았고, 사용하는 스타일과 다른부분이 있어 더욱 어렵게 느껴졌습니다
+                        <span style="color: rgb(124, 98, 32);">그래서 수업시간에 공부하였던 내용과 주변 선배님들 혹은 인터넷을 통하여 부족한 부분과 오류 부분을 보안하였고,</span>
+                        선배님 혹은 인터넷을 통하여 깔끔하게 제작할 수 있도록 도움을 받았고 오류를 수정하고 찾는 과정에서는 챗GPT를 활용하여 
+                        오류를 찾아내어 수정하는 과정을 가지며 해결해나갔습니다.
+                    </div>
+                </li>
+
+            </ul>
+        
+        
+        <div class="div" style="overflow-y: hidden; height:50px;"></div>
+    </div>
+</body>
+</html>

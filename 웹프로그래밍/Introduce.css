@@ -1,0 +1,184 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+.contents1{
+    font-size: 20px;
+    font-weight: lighter;
+}
+.contents1_bold{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+
+}
+.contents2{
+font-size: 24px;
+}
+.contents3{
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: left;
+    margin-left: 7px;
+}
+.contents3_bold{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-left: 5px;
+    text-align: left;
+}
+.contents4{
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+.intro_bg{
+    background-image: url("bg.jpg");
+    width:1280;
+    height: 1300px;
+}
+.header{
+    display: flex;
+    width: 1280px;
+    height: 86px;
+    margin: auto;
+}
+
+.search{
+width: 300px;
+height: 40px;
+background: green;
+border-radius: 5px;
+margin-top: 24px;
+}
+.search > form > input{
+    border: none;
+    width: 250px;
+    height: 40px;
+    background: white;
+    color: black;
+    padding-left: 10px;
+}
+.button{
+    border: 0;
+    background: green;
+}
+.nav{
+    display: flex;
+    justify-content: flex-start;
+    line-height: 86px;
+    width: calc(1280px - 300px);
+    
+}
+.nav>li{
+    margin-left: 84px;
+    color: rgb(255, 147, 165);
+}
+.nav>li>a{
+    color: black;
+}
+.nav >li>a:hover{
+    color:rgb(130, 108, 255);
+}
+/*공통*/
+
+
+.icons{
+    display: flex;
+    width: 1280px;
+    background: white;
+    margin: auto;
+    margin-top:70px;
+}
+.icons>li{
+    flex: 1;
+    height: 300px;
+    padding-left: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(109, 109, 109, 0.5);
+}
+.icons>li:not(:last-child){
+    margin-right: 20px;
+}
+.intro{
+    width: 1280px;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.A{
+    position:relative; 
+    top:50px;
+    display: flex;
+    width: 1280px;
+    background:white;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(109, 109, 109, 0.5);
+}
+.A>li{
+    flex: 1;
+    height:400px;
+}
+.A>li>div{
+    text-align: center;
+    height: 320px;
+    margin-top: 37px;
+    border-right: 1px solid gray;
+}
+
+.arrow{
+    margin-top: 20px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-left: 5px solid rgb(233, 157, 226);
+    border-bottom: 5px solid rgb(137, 169, 205);
+    transform: rotate(-135deg);
+    box-shadow: 0px 0px 10px rgba(109, 109, 109, 0.5);
+}
+.image_jinhee{
+    background-image: url("김진희.png");
+    background-size: 560px;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.body1 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    word-spacing: 2px;
+    overflow: hidden;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 25px;
+  }
+  
+  
+  .letter {
+    display: inline-block;
+    animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  }
+  
+  @keyframes reveal {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  

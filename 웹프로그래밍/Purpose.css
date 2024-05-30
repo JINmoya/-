@@ -1,0 +1,291 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+.contents1{
+    font-size: 20px;
+    font-weight: lighter;
+}
+
+.contents2{
+font-size: 24px;
+}
+.contents3{
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: left;
+    
+}
+.contents3_center{
+    margin-top: 10px;
+    font-size: 15px;
+    text-align: center;
+}
+.contents3_bold{
+    font-size: 15px;
+    font-weight: bold;
+    margin-top: 5px;
+    text-align: left;
+}
+.contents5_bold{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+.intro_bg{
+    background-image: url("bg.jpg");
+    width:1280;
+    height: 1200px;
+}
+.header{
+    display: flex;
+    width: 1280px;
+    height: 86px;
+    margin: auto;
+}
+
+.search{
+width: 300px;
+height: 40px;
+background: green;
+border-radius: 5px;
+margin-top: 24px;
+}
+.search > form > input{
+    border: none;
+    width: 250px;
+    height: 40px;
+    background: white;
+    color: black;
+    padding-left: 10px;
+}
+.button{
+    border: 0;
+    background: green;
+}
+.nav{
+    display: flex;
+    justify-content: flex-start;
+    line-height: 86px;
+    width: calc(1280px - 300px);
+    
+}
+.nav>li{
+    margin-left: 84px;
+    color: rgb(255, 147, 165);
+}
+.nav>li>a{
+    color: black;
+}
+.nav >li>a:hover{
+    color:rgb(130, 108, 255);
+}
+a{
+    color: rgb(193, 57, 57);
+    text-decoration: none;
+}
+a:hover{
+    color: blue;
+}
+.a1{
+    color: gray;
+    text-decoration: none;
+}
+.a1:hover{
+    color: blue;
+}  
+
+
+.intro{
+    width: 1280px;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.icons1{
+    display: flex;
+    width: 1280px;
+    background: white;
+    margin: auto;
+    margin-top: 30px;
+}
+.icons1>li{
+    flex: 1;
+    height: 250px;
+    padding-left: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(109, 109, 109, 0.5);
+}
+.icons1>li:not(:last-child){
+    margin-right: 20px;
+}
+
+.icons2{
+    display: flex;
+    width: 1280px;
+    background: white;
+    margin: auto;
+    margin-top: 30px;
+}
+.icons2>li{
+    flex: 1;
+    height: 310px;
+    padding-left: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(109, 109, 109, 0.5);
+}
+.icons2>li:not(:last-child){
+    margin-right: 20px;
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+    width: 1280px;
+    padding-top: 10px;
+}
+.A{
+    position:relative; 
+    top:5px;
+    display: flex;
+    width: 600px;
+    background:white;
+    margin-top: 20px;
+    margin-left: 120px;
+    box-shadow: 0px 0px 10px rgba(109, 109, 109, 0.5);
+}
+.A>li{
+    flex: 1;
+    height:300px;
+
+}
+.A>li>div{
+    text-align: center;
+    height: 230px;
+    margin-top: 37px;
+    border-right: 1px solid gray;
+}
+
+.icons3{
+    display: flex;
+    width: 250px;
+    background: white;
+    margin-left: 150px;
+    margin-top: 30px;
+}
+.icons3>li{
+    flex: 1;
+    height: 550px;
+    padding-left: 5px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(176, 129, 129, 0.5);
+}
+.k-water{
+    background-image: url("water_logo.jpg");
+    width:150px;
+    height: 150px;
+    background-size: cover;
+}
+
+.check{
+    width: 24px;
+    height: 5px;
+    box-shadow: 0 8px yellow, 0 16px 0 skyblue;
+}
+
+/*말풍선 효과*/
+  .span2 {
+    display: flex;
+    width: 200px;
+    padding: 2px 16px;
+    display: inline-block;
+  }
+  .arrow_box {
+    display: none;
+    position: absolute;
+    width: 210px;
+    padding: 8px;
+    left: 260px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+    background: #333;
+    color: #fff;
+    font-size: 14px;
+  }
+  
+  .arrow_box:after {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -10px;
+    border: solid transparent;
+    border-color: rgba(51, 51, 51, 0);
+    border-bottom-color: #333;
+    border-width: 10px;
+    pointer-events: none;
+   
+  }
+  
+  span:hover + p.arrow_box {
+    display: block;
+  }
+
+  /*타이틀*/
+  .body1 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .content {
+    word-spacing: 2px;
+    overflow: hidden;
+  }
+  
+  .title {
+    margin: 0;
+    font-size: 25px;
+  }
+  
+  
+  .letter {
+    display: inline-block;
+    animation: reveal 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+  }
+  
+  @keyframes reveal {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  /*텍스트 옆에서 스르륵*/
+  .wrapper{
+    display: inline-block;
+    position: relative;
+  }
+  .hidden-text{
+    color: blue;
+    display: inline-block;
+    opacity: 0;
+    white-space: nowrap;
+    overflow:hidden;
+    max-width: 0;
+    margin-left: 5px;
+    transition: max-width 0.5s ease,opacity 0.5s ease;
+  }
+  .wrapper:hover .hidden-text {
+    opacity: 1;
+    max-width: 500px; 
+}

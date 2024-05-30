@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>방울이 그리기</title>
+    <style>
+        .container{
+            display: flex;
+            align-items: center;
+        }
+        .canvas-container,image-container{
+            margin: 10px;
+        }
+        #Mycanvas{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body onload="init()">
+    <h3>수자원 공사의 마스코드 방울이를 그려보세요!</h3>
+    <hr>
+    <br>
+    <div class="container">
+        <div class="image-container">
+            <img src="방울이_그리기.jpg" alt="bangul" width="300" height="300">
+        </div>
+        <canvas id="Mycanvas" style="background-color: rgb(175, 209, 238);" width="450"
+         height="350"></canvas><br>
+
+
+    <button onclick="clearCanvas()">전체 지우기</button>
+    <label for="colorPicker">색깔 선택: </label>
+    <select id="colorPicker" onchange="changeColor()">
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="black">Black</option>
+        <option value="yellow">Yellow</option>
+    </select>
+    
+    </div>
+
+    <script>
+        var canvas,context;
+
+        function init(){
+            canvas=document.getElementById("Mycanvas");
+            context=canvas.getContext("2d");
+
+            context.lineWidth=2;
+            context.strokeStyle="blue";
+        
+            canvas.addEventListener("mousemove",function(e){move(e)},false);
+            canvas.addEventListener("mousedown",function(e){down(e)},false);
+            canvas.addEventListener("mouseup",function(e){up(e)},false);
+            canvas.addEventListener("mouseout",function(e){out(e)},false);
+        }
+        var startX=0,startY=0;
+        var drawing=false;
+        function draw(curX,curY){
+            context.beginPath();
+            context.moveTo(startX,startY);
+            context.lineTo(curX,curY);
+            context.stroke();
+        }
+        function down(e){
+            startX=e.offsetX; 
+            startY=e.offsetY;
+            drawing=true;
+        }
+        function up(e){
+            drawing=false;
+        }
+        function move(e){
+            if(!drawing){
+                return;
+            }
+            var curX=e.offsetX, curY=e.offsetY;
+            draw(curX,curY);
+            startX=curX; startY=curY;
+        }
+        function out(e) {
+            drawing=false;
+        }
+        function clearCanvas() {
+            context.clearRect(0, 0, canvas.width, canvas.height);
+        }
+
+        function changeColor() {
+            var colorPicker = document.getElementById("colorPicker");
+            context.strokeStyle = colorPicker.value;
+        }
+    </script>
+</body>
+</html>
